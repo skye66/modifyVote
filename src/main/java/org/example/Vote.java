@@ -113,6 +113,9 @@ public class Vote {
         for (String s : split) {
             logger.info("投票id:{},当前排名：{},当前票数：{}",s,idList.indexOf(s)+1, rankMap.get(s));
         }
+        idList.forEach(k-> {
+            logger.info("投票id:{},当前排名：{},当前票数：{}",k,idList.indexOf(k)+1, rankMap.get(k));
+        });
     }
 
 }
